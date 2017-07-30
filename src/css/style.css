@@ -1,0 +1,9 @@
+@font-face {
+	font-family: "Open Sans";
+	src: url('../font/open-sans/OpenSans-Regular.ttf') format('ttf');
+	font-weight: 400;
+}
+
+.hello {
+	color: red;
+}
