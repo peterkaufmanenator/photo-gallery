@@ -1,0 +1,34 @@
+.gallery-image {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	min-width: 100vw;
+	min-height: 100vh;
+	display: none;
+}
+
+.gallery-image.visible {
+	display: block;
+}
+
+.gallery-arrow {
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	cursor: pointer;
+	font-size: 64px;
+	color: white;
+}
+
+.gallery-title {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 40px;
+	color: white;
+}
+
+.right-arrow {
+	left: auto;
+	right: 0px;
+}

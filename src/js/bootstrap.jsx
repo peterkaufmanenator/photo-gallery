@@ -5,7 +5,7 @@ import Gallery from './gallery/Gallery.jsx';
 
 export default function bootstrapGallery() {
 	ReactDOM.render(
-		<Gallery />,
+		<Gallery data={Data} />,
 		document.getElementById('app')
 	)
 }

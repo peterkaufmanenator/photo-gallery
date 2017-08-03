@@ -46,7 +46,17 @@ module.exports = {
 				]
 			},
 			{
-				test: /\.(woff|woff2|ttf|otf)$/,
+            test: /\.scss$/,
+	            use: [{
+	                loader: "style-loader" // creates style nodes from JS strings
+	            }, {
+	                loader: "css-loader" // translates CSS into CommonJS
+	            }, {
+	                loader: "sass-loader" // compiles Sass to CSS
+	            }]
+	        },
+			{
+				test: /\.(woff|woff2|ttf|otf|svg|eot)$/,
 				use: [
 					'file-loader'
 				]

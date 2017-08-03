@@ -2,7 +2,24 @@
 	"galleryTitle": "Peter's Gallery",
 	"galleryItems": [
 		{
-			"image": ""
+			"url": "//img1.sunset.timeinc.net/sites/default/files/image/2016/05/main/secret-sierra-nevada-ca-mcgee-creek-sierra-crest-0513.jpg",
+			"caption": "Sierra, Nevada"
+		},
+		{
+			"url": "//www.jtbgenesis.com/pic/tour/141231Mt.fuji.Mitsutouge.jpg",
+			"caption": "Mt. Fuji"
+		},
+		{
+			"url": "//upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg",
+			"caption": "Mt. Everest"
+		},
+		{
+			"url": "//www.niagarafallslive.com/wp-content/uploads/2016/12/opt-falls-background-1600x1000-283k.jpg",
+			"caption": "Niagara Falls"
+		},
+		{
+			"url": "//www.hofmag.com/wp-content/uploads/2016/04/Salar.de_.Uyuni_.original.1512.jpg",
+			"caption": "Salar de Uyuni"
 		}
 	]
 }
