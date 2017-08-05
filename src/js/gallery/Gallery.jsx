@@ -3,11 +3,12 @@ import GalleryItem from './GalleryItem.jsx';
 import Scss from './Gallery.scss';
 
 export default class Gallery extends React.Component {
+
 	constructor(props) {
 		super(props);
 		this.state = {'data': props.data, 'visibleGalleryItemIndex': 0};
 		this.slideLeft = this.slideLeft.bind(this);
-		this.slideRight = this.slideLeft.bind(this);
+		this.slideRight = this.slideRight.bind(this);
 
 	}
 
@@ -19,17 +20,18 @@ export default class Gallery extends React.Component {
 		else {
 			this.setState({'visibleGalleryItemIndex': this.state.visibleGalleryItemIndex - 1});
 		}
+		ev.stopPropagation();
 	}
 
 	slideRight(ev) {
 		let visibleGalleryIndex = this.state.visibleGalleryItemIndex;
-		console.log((this.state.data.galleryItems.length - 1));
 		if(visibleGalleryIndex === (this.state.data.galleryItems.length - 1)) {
 			this.setState({'visibleGalleryItemIndex': 0});
 		}
 		else {
-			this.setState({'visibleGalleryItemIndex': this.state.data.visibleGalleryItemIndex + 1});
+			this.setState({'visibleGalleryItemIndex': this.state.visibleGalleryItemIndex + 1});
 		}
+		ev.stopPropagation();
 	}
 
 	render() {
@@ -40,7 +42,9 @@ export default class Gallery extends React.Component {
 					return <GalleryItem visible={visible} image={image} key={index} />;
 				})}
 			</div>
-			<div className="gallery-title">{this.state.data.galleryTitle}</div>
+			<div className="gallery-title">
+				<span className="gallery-title-text">{this.state.data.galleryTitle}</span>
+			</div>
 			<div className="gallery-arrow left-arrow" onClick={this.slideLeft}>
 				<i className="fa fa-chevron-left"></i>
 			</div>
@@ -49,4 +53,5 @@ export default class Gallery extends React.Component {
 			</div>
 		</div>;
 	}
+	
 }
