@@ -1,6 +1,13 @@
 # photo-gallery
 This is a photo gallery that I am working on.  It uses just plain HTML5/CSS3/javascript.  It uses npm+webpack+babel as build tools.  It also utilizes react.js as the frontend view library.
 
+URL
+---
+
+You can view the site from here:
+
+https://peterkaufmanenator.github.io/photo-gallery/index.html
+
 Dependencies
 ------------
 
