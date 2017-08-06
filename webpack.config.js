@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const GoogleFontsPlugin = require("google-fonts-webpack-plugin")
 
 module.exports = {
 	entry: {
@@ -11,6 +12,11 @@ module.exports = {
 		new HtmlWebpackPlugin({
 			title: 'Gallery',
 			template: 'src/index.ejs',
+		}),
+		new GoogleFontsPlugin({
+			fonts: [
+				{ family: "Roboto", variants: [ "400", "700italic" ] }
+			]
 		})
 	],
 	devtool: 'inline-source-map',
