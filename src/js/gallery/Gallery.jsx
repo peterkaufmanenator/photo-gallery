@@ -10,7 +10,7 @@ export default class Gallery extends React.Component {
 		this.state = {'data': props.data, 'visibleGalleryItemIndex': 0};
 		this.slideLeft = this.slideLeft.bind(this);
 		this.slideRight = this.slideRight.bind(this);
-
+		this.handleGalleryThumbClick = this.handleGalleryThumbClick.bind(this);
 	}
 
 	slideLeft(ev) {
@@ -33,6 +33,10 @@ export default class Gallery extends React.Component {
 			this.setState({'visibleGalleryItemIndex': this.state.visibleGalleryItemIndex + 1});
 		}
 		ev.stopPropagation();
+	}
+
+	handleGalleryThumbClick(index) {
+		this.setState({'visibleGalleryItemIndex': index})
 	}
 
 	render() {
@@ -65,7 +69,7 @@ export default class Gallery extends React.Component {
 			<div className="gallery-thumbs">
 				{this.state.data.galleryItems.map((image, index) => {
 					let active = (index === this.state.visibleGalleryItemIndex) ? 'active': 'inactive';
-					return <GalleryThumb active={active} image={image} key={index} />
+					return <GalleryThumb onGalleryThumbClick={this.handleGalleryThumbClick} active={active} index={index} image={image} key={index} />
 				})}
 				<div className="gallery-thumb-caret" style={caretStyle}></div>
 			</div>
