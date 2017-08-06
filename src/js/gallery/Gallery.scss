@@ -2,13 +2,19 @@
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	min-width: 100vw;
-	min-height: 100vh;
-	display: none;
+	width: 100vw;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: opacity 0.5s;
 }
 
 .gallery-image.visible {
-	display: block;
+	opacity: 1;
+}
+
+.gallery-image.invisible {
+	opacity: 0;
 }
 
 .gallery-arrow {
@@ -18,6 +24,29 @@
 	cursor: pointer;
 	font-size: 64px;
 	color: white;
+	padding: 4px;
+}
+
+.gallery-arrow i {
+	z-index: 2;
+	position: relative;
+}
+
+.gallery-arrow::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+	z-index: 1;
+}
+
+.right-arrow {
+	left: auto;
+	right: 0px;
 }
 
 .gallery-title {
@@ -26,9 +55,56 @@
 	left: 10px;
 	font-size: 40px;
 	color: white;
+	padding: 8px;
 }
 
-.right-arrow {
-	left: auto;
-	right: 0px;
+.gallery-title-text {
+	position: relative;
+	z-index: 2;
+}
+
+.gallery-title::before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+	z-index: 1;
+}
+
+.gallery-thumbs {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	height: 38px;
+	width: auto;
+}
+
+.gallery-thumb {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	cursor: pointer;
+	margin-top: 4px;
+	margin-right: 12px;
+	background-size: cover;
+	filter: grayscale(100%);
+	transition: filter 0.5s;
+}
+
+.gallery-thumb.active {
+	filter: grayscale(0%);
+}
+
+.gallery-thumb-caret {
+	width: 30px;
+	height: 30px;
+	border: 4px solid white;
+	position: absolute;
+	left: -4px;
+	top: 0px;
+	transition: left 0.5s;
 }

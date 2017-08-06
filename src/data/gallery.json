@@ -1,25 +1,25 @@
 {
-	"galleryTitle": "Peter's Gallery",
+	"galleryTitle": "Scenes of Beauty",
 	"galleryItems": [
 		{
-			"url": "//img1.sunset.timeinc.net/sites/default/files/image/2016/05/main/secret-sierra-nevada-ca-mcgee-creek-sierra-crest-0513.jpg",
-			"caption": "Sierra, Nevada"
+			"url": "//cdn.imgximg.com/2016/05/31/BlueandBlackStarrySky.jpg",
+			"caption": "Starry Sky"
 		},
 		{
-			"url": "//www.jtbgenesis.com/pic/tour/141231Mt.fuji.Mitsutouge.jpg",
-			"caption": "Mt. Fuji"
+			"url": "//www.nasa.gov/sites/default/files/thumbnails/image/187_1003703_africa_dxm.png",
+			"caption": "Earth"
+		},
+		{
+			"url": "//i.ytimg.com/vi/LXUSzXfdq_0/maxresdefault.jpg",
+			"caption": "Tokyo Night"
 		},
 		{
 			"url": "//upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg",
 			"caption": "Mt. Everest"
 		},
 		{
-			"url": "//www.niagarafallslive.com/wp-content/uploads/2016/12/opt-falls-background-1600x1000-283k.jpg",
-			"caption": "Niagara Falls"
-		},
-		{
-			"url": "//www.hofmag.com/wp-content/uploads/2016/04/Salar.de_.Uyuni_.original.1512.jpg",
-			"caption": "Salar de Uyuni"
+			"url": "//upload.wikimedia.org/wikipedia/commons/6/65/Forest_in_Yakushima_73.jpg",
+			"caption": "Yakushima"
 		}
 	]
 }
